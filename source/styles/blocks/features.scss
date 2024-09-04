@@ -1,0 +1,132 @@
+.features {
+
+}
+
+.features__wrapper {
+  padding: 20px 0 49px;
+
+  &.decor::after {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &.decor::after {
+      display: block;
+    }
+  }
+}
+
+.features__title {
+  line-height: 40px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+  }
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    counter-reset: featureslist;
+  }
+}
+
+.features__item {
+  position: relative;
+  margin-left: 80px;
+  min-height: 60px;
+  align-content: center;
+
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    padding-top: 110px;
+  }
+}
+
+.features__item::before {
+  @media (min-width: $tablet-width) {
+    counter-increment: featureslist;
+    content: counter(featureslist);
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: $primary-font;
+    font-weight: 400;
+    color: $contrast-brand-hue;
+    text-transform: uppercase;
+    font-size: 280px;
+    line-height: 200px;
+  }
+}
+
+.features__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -80px;
+  width: 60px;
+  height: 60px;
+  background-size: 25px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $brand-hue;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    background-size: 30px 32px;
+  }
+}
+
+.features__item--leaf::after {
+  background-image: url("../../icons/icon_leaf.svg");
+}
+
+.features__item--water::after {
+  background-image: url("../../icons/icon_water.svg");
+}
+
+.features__item--eat::after {
+  background-image: url("../../icons/icon_eat.svg");
+}
+
+.features__item--clock::after {
+  background-image: url("../../icons/icon_clock.svg");
+}
+
+.features__content {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 134px 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 120px;
+  }
+}
+
+.features__text {
+  margin: 0;
+  font-family: $secondary-font;
+  color: $secondary-text-color;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 2;
+  }
+}

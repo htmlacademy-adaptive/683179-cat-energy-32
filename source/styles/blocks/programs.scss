@@ -1,0 +1,142 @@
+.programs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+
+.programs__wrapper {
+  background-color: $contrast-brand-hue;
+}
+
+.programs__content {
+  margin: 0 20px;
+  padding: 21px 20px 18px;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+    padding: 77px 30px 57px 52px;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    // width: auto;
+    margin: 0 60px;
+    padding: 41px 55px 55px;
+    grid-template-columns: 165px 1fr;
+  }
+}
+
+.programs__subtitle {
+  grid-column: 2 / -1;
+  display: inline-block;
+  align-content: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / -1;
+  }
+}
+
+.programs__content--pro {
+  // margin-right: 10px;
+}
+
+.programs__img {
+  display: block;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+}
+
+.programs__img--slim {
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+  }
+}
+
+.programs__img--pro {
+  margin-top: 4px;
+  margin-left: -8px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 200px;
+    margin: 0 -34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+    margin-left: -19px;
+  }
+}
+
+.programs__lead {
+  margin: 0;
+  font-family: $secondary-font;
+  color: $secondary-text-color;
+  padding: 22px 0;
+  border-bottom: 1px solid $accent-secondary-text-color;
+  grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 24px 20px 52px 0;
+    border-bottom: none;
+    grid-column: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    padding: 39px 0 12px;
+  }
+}
+
+.programs__button {
+  margin-top: 15px;
+  padding: 4px 0;
+  grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    grid-column: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
+}
+

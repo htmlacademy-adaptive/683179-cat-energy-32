@@ -1,0 +1,43 @@
+.button {
+  display: block;
+  text-transform: uppercase;
+  border: none;
+  font-family: $primary-font;
+  cursor: pointer;
+  text-decoration: none;
+  align-content: center;
+}
+
+.button--primary {
+  background-color: $brand-hue;
+  color: $contrast-text-color;
+  padding: 10px 26px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button--secondary {
+  background-color: transparent;
+  color: $main-text-color;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button--link {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+  background-color: transparent;
+  color: $main-text-color;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.button--link::after {
+  margin-left: 15px;
+  content: "";
+  background-image: url("../../icons/icon_arrow.svg");
+  width: 32px;
+  height: 10px;
+  align-self: center;
+}

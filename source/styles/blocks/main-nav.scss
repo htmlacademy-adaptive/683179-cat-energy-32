@@ -1,0 +1,31 @@
+.main-nav {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__wrapper {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  // display: flex;
+  // flex-direction: column;
+  // width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
