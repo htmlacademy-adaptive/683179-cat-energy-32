@@ -1,20 +1,34 @@
-.logo {
+.logo__img {
   text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
-}
-
-.logo__img {
-  @media (min-width: $tablet-width) {
-    margin-right: 15px;
-  }
+  justify-content: center;
+  place-self: center start;
 }
 
 .logo__text {
-  // align-self: center;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
-    align-self: center;
+    align-content: center;
+    margin-right: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
+.logo:hover {
+  @include logo-hover;
+}
+
+.logo:active {
+  @include logo-active;
 }

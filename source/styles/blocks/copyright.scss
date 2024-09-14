@@ -1,6 +1,7 @@
 .copyright {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .copyright__link {
@@ -30,11 +31,7 @@
   }
 }
 
-.copyright__logo {
-  position: relative;
-}
-
-.copyright__logo::after {
+.copyright::after {
   content: "";
   position: absolute;
   right: 0;

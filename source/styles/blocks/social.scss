@@ -19,4 +19,8 @@
   }
 }
 
+.social__link:hover {
+  @include social-hover;
+}
+
 // .social__img {}

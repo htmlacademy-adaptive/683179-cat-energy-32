@@ -1,18 +1,15 @@
-.main-nav {
-  @media (min-width: $tablet-width) {
-    margin-left: auto;
-  }
-}
+// .main-nav {
+//   @media (min-width: $tablet-width) {
+//     margin-left: auto;
+//     display: block;
+//   }
+// }
 
 .main-nav__toggle {
+  place-self: center end;
+
   @media (min-width: $tablet-width) {
     display: none;
-  }
-}
-
-.main-nav__wrapper {
-  @media (min-width: $tablet-width) {
-    display: block;
   }
 }
 
@@ -21,11 +18,7 @@
   padding: 0;
   list-style: none;
 
-  // display: flex;
-  // flex-direction: column;
-  // width: 100%;
-
   @media (min-width: $tablet-width) {
-    display: flex;
+    margin-left: auto;
   }
 }

@@ -10,17 +10,28 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 45px 0 104px;
+
     &.decor::after {
       display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 0 49px;
+
+    &.decor::after {
+      display: none;
     }
   }
 }
 
 .features__title {
-  line-height: 40px;
-  margin-bottom: 40px;
-  // @media (min-width: $tablet-width) {
-  // }
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 74px;
+  }
 }
 
 .features__list {
@@ -34,6 +45,20 @@
 
   @media (min-width: $tablet-width) {
     counter-reset: featureslist;
+  }
+}
+
+.features__content {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 245px 245px;
+    gap: 135px 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 120px;
   }
 }
 
@@ -80,7 +105,7 @@
 
   @media (min-width: $tablet-width) {
     top: 0;
-    left: 10px;
+    left: 0;
     width: 80px;
     height: 80px;
     background-size: 30px 32px;
@@ -101,20 +126,6 @@
 
 .features__item--clock::after {
   background-image: url("../../icons/icon_clock.svg");
-}
-
-.features__content {
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 134px 137px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 120px;
-  }
 }
 
 .features__text {

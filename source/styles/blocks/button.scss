@@ -6,6 +6,7 @@
   cursor: pointer;
   text-decoration: none;
   align-content: center;
+  transition: $transition;
 }
 
 .button--primary {
@@ -16,11 +17,28 @@
   line-height: 20px;
 }
 
+.button--primary:hover {
+  @include primary-button-hover;
+}
+
+.button--primary:active {
+  @include primary-button-active;
+}
+
 .button--secondary {
   background-color: transparent;
-  color: $main-text-color;
+  color: $secondary-text-color;
+  padding: 10px 26px;
   font-size: 16px;
   line-height: 20px;
+}
+
+.button--secondary:hover {
+  @include secondary-button-hover;
+}
+
+.button--secondary:active {
+  @include secondary-button-active;
 }
 
 .button--link {
@@ -33,11 +51,24 @@
   line-height: 16px;
 }
 
+.button--link:active {
+  @include button-link-txt-active;
+}
+
 .button--link::after {
-  margin-left: 15px;
   content: "";
   background-image: url("../../icons/icon_arrow.svg");
-  width: 32px;
+  width: 33px;
   height: 10px;
+  margin-left: 25px;
   align-self: center;
+  transition: $transition;
+}
+
+.button--link:hover::after {
+  @include button-link-hover;
+}
+
+.button--link:active::after {
+  @include button-link-active;
 }

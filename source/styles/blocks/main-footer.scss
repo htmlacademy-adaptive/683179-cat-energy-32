@@ -37,6 +37,10 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     gap: 15px;
+    flex-wrap: wrap;
+    max-width: 250px;
+    justify-content: center;
+    align-items: center;
 
     &.decor::after {
       display: none;

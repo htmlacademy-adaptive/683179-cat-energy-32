@@ -1,9 +1,8 @@
-// page {
-
-// }
+.page {
+  height: 100%;
+}
 
 .page__body {
-  margin: 0;
   background-color: $main-backround-color;
   color: $main-text-color;
   font-family: $primary-font;
@@ -11,4 +10,9 @@
   line-height: $line-height;
   font-weight: 400;
   min-width: 320px;
+
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }

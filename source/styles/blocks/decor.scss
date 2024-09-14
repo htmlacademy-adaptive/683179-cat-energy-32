@@ -1,10 +1,5 @@
 .decor {
-  // padding-bottom: 40px;
   position: relative;
-  // text-align: center;
-  // margin: 0 auto;
-  // width: 80%; /* Ширина контейнера адаптивная */
-  // max-width: 767px; /* Максимальная ширина контейнера */
 }
 
 
@@ -12,9 +7,13 @@
   content: "";
   position: absolute;
   bottom: 0;
-  left: 50%; /* Линия начинается с середины контейнера */
-  width: 100%; /* Линия шире экрана на 120% */
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 40px);
   height: 1px;
   background-color: $accent-secondary-text-color;
-  transform: translateX(-50%); /* Центрируем линию относительно контейнера */
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% + 60px);
+  }
 }

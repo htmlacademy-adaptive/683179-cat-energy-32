@@ -1,9 +1,7 @@
-/* GLOBAL */
 @import "./common/variables.scss";
+@import "./common/global.scss";
 @import "./common/mixin.scss";
 @import "./common/fonts.scss";
-@import "./common/global.scss";
-
 
 /* BLOCKS */
 @import "./blocks/visually-hidden.scss";
@@ -33,6 +31,7 @@
 // CATALOG
 @import "./blocks/catalog.scss";
 @import "./blocks/card.scss";
+@import "./blocks/pagination.scss";
 @import "./blocks/accessories.scss";
 @import "./blocks/promotion-gift.scss";
 @import "./blocks/subscribe.scss";

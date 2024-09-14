@@ -8,3 +8,103 @@
     font-display: swap;
   }
 }
+
+@mixin logo-hover {
+  opacity: 0.8;
+}
+
+@mixin logo-active {
+  opacity: 0.6;
+}
+
+@mixin primary-button-hover {
+  background-color: #5eaa2f;
+}
+
+@mixin primary-button-active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@mixin secondary-button-hover {
+  background-color: #ebebeb;
+}
+
+@mixin secondary-button-active {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+@mixin button-link-txt-active {
+  color: #999999;
+}
+
+@mixin button-link-hover {
+  opacity: 1;
+  background-image: url("../../icons/link-button_arrow_active.svg");
+}
+
+@mixin button-link-active {
+  opacity: 0.5;
+}
+
+@mixin pagination-catalog-hover {
+  color: #898585;
+}
+
+@mixin pagination-catalog-active {
+  color: #b4b1b1;
+}
+
+@mixin card-catalog-hover {
+  color: #898585;
+}
+
+@mixin card-catalog-active {
+  color: #b4b1b1;
+}
+
+@mixin social-hover {
+  fill: #68b738;
+}
+
+@mixin social-active {
+  color: rgba(104, 183, 56, 0.3);
+}
+
+@mixin main-menu-white-hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@mixin main-menu-white-focus {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@mixin main-menu-white-active {
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: 0;
+  left: 16px;
+  right: 16px;
+  background-color: rgba(117, 97, 87, 0.3);
+}
+
+@mixin main-menu-black-hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@mixin main-menu-black-focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+@mixin main-menu-black-active {
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: 0;
+  left: 16px;
+  right: 16px;
+  background-color: #68b738;
+}
+

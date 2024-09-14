@@ -1,52 +1,119 @@
 .site-list {
+  color: $main-text-color;
   display: none;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     position: static;
     display: flex;
+    flex-wrap: wrap;
     border-top: none;
+    gap: 15px 33px;
 
     .decor::after {
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    z-index: 3;
+  }
 }
 
 .site-list--active {
   position: absolute;
-  top: 100%;
+  top: 65px;
   right: 0;
   width: 100%;
   background-color: #ffffff;
   display: block;
   z-index: 3;
   text-align: center;
-  border-top: 1px solid $accent-secondary-text-color;
+
+  & .site-list__item {
+    // padding-bottom: 23px;
+    // padding-top: 23px;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-
 .site-list__item {
-  text-transform: uppercase;
-  padding: 22px 0 24px;
-}
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.site-list__item:not(:last-child) {
   @media (min-width: $tablet-width) {
-    padding-right: 34px;
+
+    height: 50px;
   }
-  //   @media (min-width: $desktop-width) {
-  //   }
 }
 
 .site-list__link {
   text-decoration: none;
   color: inherit;
+  text-transform: uppercase;
+  transition: $transition;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0;
+  }
 }
 
-// .site-list__link--currrent {
+@media (min-width: $desktop-width) {
+  .site-list--white .site-list__link {
+    color: $contrast-text-color;
+  }
 
-// }
+  .site-list--white .site-list__link:hover {
+    @include main-menu-white-hover;
+  }
+
+  .site-list--white .site-list__link:focus {
+    @include main-menu-white-focus;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .site-list__link--currrent {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $brand-hue;
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .site-list--white .site-list__link--currrent {
+      &::after {
+        background-color: $background-color;
+      }
+    }
+  }
+}
+
+.site-list__link:hover {
+  @include main-menu-black-hover;
+}
+
+.site-list__link:focus {
+  @include main-menu-black-focus;
+}
+
