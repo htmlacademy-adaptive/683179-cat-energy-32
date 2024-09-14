@@ -15,7 +15,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <nav class="main-header__wrapper decor">
+    <nav class="main-header__wrapper decor main-nav">
       <div class="damn-wrap logo">
         <a class="main-header__logo logo__img" href="#">
           <picture>
@@ -51,18 +51,20 @@
         </li>
       </ul>
     </nav>
-    <div class="main-header__hero hero">
-      <h2 class="hero__title section-title">Функциональное<br>питание&nbsp;для&nbsp;котов</h2>
-      <p class="hero__slogan">Занялся собой? Займись котом!</p>
+    <div class="hero">
+      <div class="main-header__hero">
+        <h2 class="hero__title section-title">Функциональное<br>питание&nbsp;для&nbsp;котов</h2>
+        <p class="hero__slogan">Занялся собой? Займись котом!</p>
+      </div>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png, images/index-can-desktop@2x.png 2x" type="image/png" width="552" height="499">
+        <source media="(min-width: 768px)" srcset="images/index-can-desktop@1x.png, images/index-can-desktop@2x.png 2x" type="image/png" width="709" height="499">
+        <img class="hero__img" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Фото лучшего продукта в линейке Cat energy Pro c курицей">
+      </picture>
+      <a class="hero__button button button--primary" href="#">Подобрать программу</a>
     </div>
-    <picture>
-      <source media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png, images/index-can-desktop@2x.png 2x" type="image/png" width="552" height="499">
-      <source media="(min-width: 768px)" srcset="images/index-can-desktop@1x.png, images/index-can-desktop@2x.png 2x" type="image/png" width="709" height="499">
-      <img class="hero__img" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Фото лучшего продукта в линейке Cat energy Pro c курицей">
-    </picture>
-    <a class="hero__button button button--primary" href="#">Подобрать программу</a>
   </header>
-  <main class="main main__container">
+  <main class="main main--container">
     <section class="programs">
       <div class="programs__content">
         <h2 class="visually-hidden">Выбор программы питания для котиков</h2>
@@ -113,9 +115,9 @@
                 <dt class="stats__term">60 дней</dt>
                 <dd class="stats__description">Затрачено времени</dd>
               </div>
-              <div class="stats__item stats__item-wrapper--row">
-                <dt class="stats__term--row">15 000 руб.</dt>
-                <dd class="stats__description--row">Затраты&nbsp;на&nbsp;питание:</dd>
+              <div class="stats__item stats__item-wrapper-row">
+                <dt class="stats__term-row">15 000 руб.</dt>
+                <dd class="stats__description-row">Затраты&nbsp;на&nbsp;питание:</dd>
               </div>
             </dl>
           </div>
