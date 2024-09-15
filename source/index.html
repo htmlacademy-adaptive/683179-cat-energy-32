@@ -16,38 +16,40 @@
 <body class="page__body">
   <header class="main-header">
     <nav class="main-header__wrapper decor main-nav">
-      <div class="damn-wrap logo">
-        <a class="main-header__logo logo__img" href="#">
+      <div class="damn-wrap ">
+        <a class="main-header__logo logo logo__img" href="#">
           <picture>
             <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo_desktop.svg">
             <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_tablet.svg">
             <img src="images/logo_mobile.svg" width="33" height="38" alt="Cat energy">
           </picture>
         </a>
-        <a class="main-header__logo logo__text" href="#">
+        <a class="main-header__logo logo logo__text" href="#">
           <img width="101" height="18" src="images/logo_text.svg" alt="Cat Enargy">
         </a>
-        <button class="main-nav__toggle toggle toggle--open" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
       </div>
-      <ul class="main-nav__list site-list site-list--white ">
-        <li class="site-list__item decor">
-          <a class="site-list__link site-list__link--currrent" href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="site-list__item decor">
-          <a class="site-list__link" href="catalog.html">
-            Каталог продукцииnnnn
-          </a>
-        </li>
-        <li class="site-list__item decor">
-          <a class="site-list__link" href="#">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
+      <details class="main-nav__details">
+        <summary class="main-nav__toggle toggle toggle--open">
+          <span class="visually-hidden">Открыть меню</span>
+        </summary>
+        <ul class="main-nav__list site-list site-list--white ">
+          <li class="site-list__item decor">
+            <a class="site-list__link site-list__link--currrent" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item decor">
+            <a class="site-list__link" href="catalog.html">
+              Каталог продукцииnnnn
+            </a>
+          </li>
+          <li class="site-list__item decor">
+            <a class="site-list__link" href="#">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </details>
     </nav>
     <div class="hero">
       <div class="main-header__hero">
