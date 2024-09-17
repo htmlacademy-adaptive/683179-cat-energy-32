@@ -6,20 +6,12 @@
   display: grid;
   grid-template-columns: 1fr;
   position: relative;
-  padding-bottom: 20px;
-
-
-  & picture {
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
-  }
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
     padding-bottom: 0;
 
     .decor::after {
@@ -31,6 +23,7 @@
     font-size: 20px;
     line-height: 30px;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
     padding-bottom: 82px;
   }
 }
@@ -56,7 +49,7 @@
 
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/bg_desktop@2x.jpg"), linear-gradient(to bottom left, #3e4340, #525157);
-    background-position: left -20% center;
+    background-position: left 0% center;
     background-repeat: no-repeat;
     background-size: cover;
     grid-row: 1 / -1;
@@ -79,18 +72,23 @@
   &.main-header::before {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    &.main-header {
+      padding-bottom: 47px;
+    }
+  }
 }
 
 .main-header__wrapper {
-  padding: 13px 0 14px;
+  padding: 11px 0 14px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
     padding: 25px 0;
     position: static;
+    margin: 0 34px 0 30px;
+
 
     &.main-header::before {
       display: none;
@@ -98,7 +96,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 0 25px;
+    padding: 57px 0 25px;
     grid-column: 1 / -1;
     margin: 0 110px;
   }
@@ -115,20 +113,14 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 14px;
+    height: 59px;
   }
 }
 
-.damn-wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: auto;
-  margin: 0 20px;
+.main-header__hero {
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 0;
   }
 }

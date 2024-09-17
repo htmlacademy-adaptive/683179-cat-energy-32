@@ -20,15 +20,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 118px;
-    height: 21px;
+    & img {
+      width: 118px;
+      height: 21px;
+    }
   }
 }
 
-.logo:hover {
-  @include logo-hover;
-}
+// .logo:hover {
+//   @include logo-hover;
+// }
 
-.logo:active {
-  @include logo-active;
-}
+// .logo:active {
+//   @include logo-active;
+// }

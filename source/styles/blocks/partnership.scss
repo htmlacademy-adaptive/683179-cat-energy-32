@@ -4,15 +4,15 @@
   padding: 26px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 40px;
+    padding: 61px 40px;
   }
 
   @media (min-width: $desktop-width) {
     width: 565px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: $background-color;
     padding: 60px 79px;
-    margin-top: 65px;
+    margin-top: 95px;
     z-index: 3;
   }
 }
@@ -24,6 +24,7 @@
   font-weight: 400;
   line-height: 20px;
   flex-basis: 165px;
+  font-family: $secondary-font;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -33,7 +34,7 @@
 
 .partnership__address {
   margin: 0;
-  font-family: $secondary-font;
+
   font-size: 14px;
   line-height: 20px;
   flex-basis: 165px;

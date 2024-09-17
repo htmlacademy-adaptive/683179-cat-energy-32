@@ -2,7 +2,7 @@
   display: block;
   text-transform: uppercase;
   border: none;
-  font-family: $primary-font;
+  font-family: $secondary-font;
   cursor: pointer;
   text-decoration: none;
   align-content: center;
@@ -60,9 +60,13 @@
   background-image: url("../../icons/icon_arrow.svg");
   width: 33px;
   height: 10px;
-  margin-left: 25px;
+  margin-left: 15px;
   align-self: center;
   transition: $transition;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
 }
 
 .button--link:hover::after {

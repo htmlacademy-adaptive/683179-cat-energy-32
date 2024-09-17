@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px 20px;
+  font-family: $secondary-font;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 162px 162px auto;
@@ -11,8 +12,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr;
-    gap: 42px 55px;
+    grid-template-columns: 162px 162px;
+    gap: 61px 42px;
   }
 }
 
@@ -40,9 +41,9 @@
   left: 50%;
   transform: translateX(-50%);
   font-weight: 400;
+  font-family: $primary-font;
   color: $secondary-text-color;
   background-color: $contrast-brand-hue;
-  font-family: $secondary-font;
   text-transform: lowercase;
   font-size: 12px;
   line-height: 12px;
@@ -81,13 +82,16 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 32px;
-    padding-bottom: 11px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 2px;
   }
 }
 
 .stats__item-wrapper-row {
   grid-column: 1 / -1;
-  font-family: $primary-font;
+  font-family: $secondary-font;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 20px;

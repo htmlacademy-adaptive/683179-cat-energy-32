@@ -8,6 +8,11 @@
 .social__link {
   text-decoration: none;
   color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  height: 43px;
 
 
   @media (min-width: $tablet-width) {

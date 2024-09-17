@@ -3,28 +3,28 @@
   width: 28px;
   height: 24px;
   border: none;
-  background-color: transparent;
+
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
-
     display: none;
   }
 }
 
-.toggle--open {
-  background-image: url("../../icons/toggle_open.svg");
+// .toggle--open {
+//   background-image: url("../../icons/toggle_open.svg");
 
-  @media (min-width: $tablet-width) {
+//   @media (min-width: $tablet-width) {
 
-    display: none;
-  }
-}
+//     display: none;
+//   }
+// }
 
-.toggle--close {
-  background-image: url("../../icons/toggle_close.svg");
+// .toggle--close {
+//   background-image: url("../../icons/toggle_close.svg");
 
-  @media (min-width: $tablet-width) {
+//   @media (min-width: $tablet-width) {
 
-    display: none;
-  }
-}
+//     display: none;
+//   }
+// }

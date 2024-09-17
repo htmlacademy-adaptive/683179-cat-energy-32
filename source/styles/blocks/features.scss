@@ -58,7 +58,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 120px;
+    gap: 78px;
   }
 }
 
@@ -82,7 +82,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    font-family: $primary-font;
+    font-family: $secondary-font;
     font-weight: 400;
     color: $contrast-brand-hue;
     text-transform: uppercase;
@@ -130,7 +130,6 @@
 
 .features__text {
   margin: 0;
-  font-family: $secondary-font;
   color: $secondary-text-color;
   position: relative;
 
