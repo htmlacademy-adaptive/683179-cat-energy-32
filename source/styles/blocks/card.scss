@@ -2,7 +2,7 @@
   padding: 20px 0 25px;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to top, $contrast-brand-hue 84%, transparent 16%);
+    background: linear-gradient(to top, $contrast-brand-hue 430px, transparent 430px);
     padding: 14px 0 40px;
 
     &.decor::after {
@@ -15,7 +15,7 @@
   }
 }
 
-.card__link--title {
+.card__link-for-title {
   text-decoration: none;
   width: 95px;
   padding-bottom: 14px;
@@ -69,7 +69,7 @@
 // }
 
 
-.card__link {
+.card__link-for-img {
   text-decoration: none;
   // width: 140px;
   // height: 107px;
