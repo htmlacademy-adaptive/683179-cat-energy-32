@@ -3,8 +3,6 @@
   list-style: none;
 }
 
-// .social__item {}
-
 .social__link {
   text-decoration: none;
   color: inherit;
@@ -15,27 +13,24 @@
   height: 43px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 37px;
     height: 37px;
   }
 }
 
-.social-icon {
+.social__icon {
   color: $one-of-dark;
   transition: $transition;
 }
 
-.social__link:hover .social-icon {
+.social__link:hover .social__icon {
   @include social-hover;
 }
 
-.social__link:focus .social-icon {
+.social__link:focus .social__icon {
   @include social-hover;
 }
 
-.social__link:active .social-icon {
+.social__link:active .social__icon {
   @include social-active;
 }

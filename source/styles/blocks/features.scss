@@ -1,7 +1,3 @@
-// .features {
-
-// }
-
 .features__wrapper {
   padding: 20px 0 49px;
   margin: 0 20px;
@@ -30,7 +26,7 @@
 }
 
 .features__title {
-  padding-bottom: 40px;
+  padding-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 74px;
@@ -58,9 +54,13 @@
     gap: 135px 140px;
   }
 
+  @media (min-width: 780px) and (max-width: 1439px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 80px;
+  }
+
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
     gap: 78px;
   }
 }

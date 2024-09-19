@@ -19,9 +19,9 @@
 }
 
 .main-footer__logo {
+  flex-shrink: 0;
   justify-content: center;
   padding: 20px 0;
-
 
   & img {
     width: 128px;
@@ -40,16 +40,14 @@
 
 .main-footer__social {
   display: flex;
+  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 16px;
   padding: 10px 0;
 
   @media (min-width: $tablet-width) {
-
-    flex-wrap: wrap;
-    gap: 15px;
     max-width: 250px;
-
 
     &.decor::after {
       display: none;

@@ -2,7 +2,7 @@
   padding: 20px 0 25px;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to top, $contrast-brand-hue 430px, transparent 430px);
+    background: linear-gradient(to bottom, transparent 83px, $contrast-brand-hue 83px);
     padding: 14px 0 40px;
 
     &.decor::after {
@@ -54,29 +54,12 @@
   @include card-catalog-active;
 }
 
-// .card__image {
-//   grid-row: 1/3;
-//   align-self: start;
-
-//   @media (min-width: $tablet-width) {
-//     margin: 0 auto 19px;
-//     order: -1;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     margin: 0 auto 12px;
-//   }
-// }
-
-
 .card__link-for-img {
   text-decoration: none;
-  // width: 140px;
-  // height: 107px;
   display: block;
   grid-column: 1 / 2;
   grid-row: 1/3;
-  align-self: start;
+  align-self: center;
 
 
   @media (min-width: $tablet-width) {
@@ -123,7 +106,6 @@
     gap: 5px;
   }
 }
-
 
 .card__item {
   display: flex;

@@ -1,0 +1,17 @@
+.logo-img {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-self: center start;
+  transition: $transition;
+}
+
+.logo-img:hover {
+  opacity: 0.8;
+}
+
+.logo-img:active {
+  opacity: 0.6;
+}

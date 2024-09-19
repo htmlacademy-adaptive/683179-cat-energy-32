@@ -1,0 +1,34 @@
+.logo-text {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    align-content: center;
+    margin-right: 50px;
+  }
+}
+
+.logo-text__icon {
+  color: $logo-text-color;
+  transition: $transition;
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
+.logo-text__icon:hover {
+  color: $logo-text-hover;
+}
+
+.logo-text__icon:focus {
+  color: $logo-text-hover;
+}
+
+.logo-text__icon:active {
+  color: $logo-text-active;
+}
