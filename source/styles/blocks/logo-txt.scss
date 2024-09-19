@@ -4,8 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // transition: $transition;
-
+  
   @media (min-width: $tablet-width) {
     align-content: center;
     margin-right: 50px;
@@ -13,6 +12,7 @@
 }
 
 .logo-text__icon {
+
   align-content: center;
   display: block;
 
