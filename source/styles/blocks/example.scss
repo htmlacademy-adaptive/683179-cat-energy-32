@@ -17,7 +17,6 @@
 }
 
 .example__wrapper {
-
   padding: 0 20px 40px;
 
   @media (min-width: $tablet-width) {
@@ -126,7 +125,7 @@
   clip-path: inset(0 0 0 50%);
 }
 
-.example-curtain {
+.example__curtain {
   z-index: 1;
   grid-area: 1 / 1 / 2 / 2;
   place-self: center center;
@@ -170,7 +169,7 @@
 }
 
 
-.example-curtain:hover {
+.example__curtain:hover {
   background-color: $slider-control-hover;
 
   & .example__button {
@@ -182,7 +181,7 @@
   }
 }
 
-.example-curtain:active {
+.example__curtain:active {
   opacity: $slider-control-active-opacity;
   background-color: $slider-control-active-color;
 

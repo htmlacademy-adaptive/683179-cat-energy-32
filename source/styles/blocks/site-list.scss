@@ -2,15 +2,12 @@
   color: $main-text-color;
   display: none;
   font-family: $secondary-font;
-  // transition: opacity 0.3s ease;
-
 
   @media (min-width: $tablet-width) {
     display: block;
     flex-flow: row wrap;
     border-top: none;
     gap: 15px 33px;
-    opacity: 1;
 
     .decor::after {
       display: none;
@@ -27,32 +24,29 @@
   top: 100%;
   right: 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: $background-color;
   opacity: 1;
-  // display: block;
   z-index: 3;
   text-align: center;
-
-  & .site-list__item {
-    // padding-bottom: 23px;
-    // padding-top: 23px;
-  }
 
   @media (min-width: $tablet-width) {
     position: static;
   }
 }
 
-// .main-header--catalog .site-list--active {
-//   z-index: 1000;
-// }
-
 .site-list--tablet {
   display: none;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
     margin-left: auto;
+    max-width: 70%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+    max-width: 50%;
   }
 }
 
@@ -65,9 +59,6 @@
   @media (min-width: $tablet-width) {
     height: 50px;
   }
-
-  // @media (min-width: $desktop-width) {
-  // }
 }
 
 .site-list__link {
@@ -79,7 +70,6 @@
   height: 100%;
   display: flex;
   align-items: center;
-
   justify-content: center;
 
   @media (min-width: $tablet-width) {
@@ -101,10 +91,19 @@
   }
 }
 
+.site-list--white .site-list__link:hover::after {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.site-list--white .site-list__link:focus::after {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 
 @media (min-width: $tablet-width) {
   .site-list__link--current {
     position: relative;
+    transition: $transition;
 
     &::after {
       position: absolute;
@@ -115,6 +114,7 @@
       right: 0;
       background-color: $brand-hue;
       display: block;
+      transition: $transition;
     }
   }
 
@@ -129,6 +129,10 @@
 
 .site-list__link:hover {
   @include main-menu-black-hover;
+}
+
+.site-list__link:hover::after {
+  background-color: rgba(104, 183, 56, 0.3);
 }
 
 .site-list__link:focus {

@@ -1,12 +1,12 @@
 .main-nav {
   display: flex;
-  align-items: center; /* Centers items vertically */
+  align-items: center;
   justify-content: space-between;
   width: auto;
-  margin: 0 20px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,15 +28,9 @@
   margin: 0;
   padding: 0;
   list-style: none;
-
-  @media (min-width: $tablet-width) {
-
-    // display:  display: block;;
-  }
 }
 
 .main-nav__details {
-  /* Скрыть маркеры по умолчанию */
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -45,16 +39,13 @@
 }
 
 .main-nav__details[open] .toggle {
-  /* Изменить иконку при открытом меню */
   background-image: url("../../icons/toggle_close.svg");
 }
 
 .main-nav__details:not([open]) .toggle {
-  /* Иконка для закрытого меню */
   background-image: url("../../icons/toggle_open.svg");
 }
 
 .main-nav__details[open] .main-nav__list {
-  /* Показать список, когда details открыт */
   display: block;
 }
