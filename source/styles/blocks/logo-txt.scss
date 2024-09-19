@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  // transition: $transition;
 
   @media (min-width: $tablet-width) {
     align-content: center;
@@ -12,23 +13,37 @@
 }
 
 .logo-text__icon {
-  color: $logo-text-color;
-  transition: $transition;
+  align-content: center;
+  display: block;
 
   @media (min-width: $desktop-width) {
-    width: 118px;
-    height: 21px;
+    .main-header__logo & {
+      width: 118px;
+      height: 21px;
+    }
   }
 }
 
-.logo-text__icon:hover {
-  color: $logo-text-hover;
+.logo-text:hover {
+  color: #3e3e3e;
 }
 
-.logo-text__icon:focus {
-  color: $logo-text-hover;
+.logo-text:focus {
+  color: #3e3e3e;
 }
 
-.logo-text__icon:active {
-  color: $logo-text-active;
+.logo-text:active {
+  color: #6b6b6b;
+}
+
+.main-header__logo.logo-text:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo.logo-text:focus {
+  opacity: 0.8;
+}
+
+.main-header__logo.logo-text:active {
+  opacity: 0.6;
 }
