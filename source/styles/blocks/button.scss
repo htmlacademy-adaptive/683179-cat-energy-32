@@ -1,0 +1,78 @@
+.button {
+  display: block;
+  text-transform: uppercase;
+  border: none;
+  font-family: $secondary-font;
+  cursor: pointer;
+  text-decoration: none;
+  align-content: center;
+  transition: $transition;
+}
+
+.button--primary {
+  background-color: $brand-hue;
+  color: $contrast-text-color;
+  padding: 10px 26px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button--primary:hover {
+  @include primary-button-hover;
+}
+
+.button--primary:active {
+  @include primary-button-active;
+}
+
+.button--secondary {
+  background-color: transparent;
+  color: $secondary-text-color;
+  padding: 10px 26px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button--secondary:hover {
+  @include secondary-button-hover;
+}
+
+.button--secondary:active {
+  @include secondary-button-active;
+}
+
+.button--link {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+  background-color: transparent;
+  color: $main-text-color;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.button--link:active {
+  @include button-link-txt-active;
+}
+
+.button--link::after {
+  content: "";
+  background-image: url("../../icons/icon_arrow.svg");
+  width: 33px;
+  height: 10px;
+  margin-left: 15px;
+  align-self: center;
+  transition: $transition;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
+}
+
+.button--link:hover::after {
+  @include button-link-hover;
+}
+
+.button--link:active::after {
+  @include button-link-active;
+}

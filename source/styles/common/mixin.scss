@@ -1,0 +1,93 @@
+@mixin font-face($font-family, $font-size, $font-style, $font-weight, $font-src) {
+  @font-face {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    src: $font-src;
+    font-display: swap;
+  }
+}
+
+@mixin max-width {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+@mixin logo-hover {
+  opacity: 0.8;
+}
+
+@mixin logo-active {
+  opacity: 0.6;
+}
+
+@mixin primary-button-hover {
+  background-color: #5eaa2f;
+}
+
+@mixin primary-button-active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@mixin secondary-button-hover {
+  background-color: #ebebeb;
+}
+
+@mixin secondary-button-active {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+@mixin button-link-txt-active {
+  color: #999999;
+}
+
+@mixin button-link-hover {
+  opacity: 1;
+  background-image: url("../../icons/link-button_arrow_active.svg");
+}
+
+@mixin button-link-active {
+  opacity: 0.5;
+}
+
+@mixin pagination-catalog-hover {
+  color: #898585;
+}
+
+@mixin pagination-catalog-active {
+  color: #b4b1b1;
+}
+
+@mixin card-catalog-hover {
+  color: #898585;
+}
+
+@mixin card-catalog-active {
+  color: #b4b1b1;
+}
+
+@mixin social-hover {
+  color: $brand-hue;
+}
+
+@mixin social-active {
+  color: rgba(104, 183, 56, 0.6);
+}
+
+@mixin main-menu-white-hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@mixin main-menu-white-focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@mixin main-menu-black-hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@mixin main-menu-black-focus {
+  color: rgba(0, 0, 0, 0.3);
+}

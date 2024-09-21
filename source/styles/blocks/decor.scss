@@ -1,0 +1,22 @@
+.decor {
+  position: relative;
+}
+
+.decor::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 40px);
+  height: 1px;
+  background-color: $accent-secondary-text-color;
+
+  .main-header & {
+    width: calc(100%);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% + 60px);
+  }
+}

@@ -1,0 +1,49 @@
+.logo-text {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    place-content: center center;
+    margin-right: 50px;
+  }
+}
+
+.logo-text__icon {
+
+  align-content: center;
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    .main-header__logo & {
+      width: 118px;
+      height: 21px;
+    }
+  }
+}
+
+.logo-text:hover {
+  color: #3e3e3e;
+}
+
+.logo-text:focus {
+  color: #3e3e3e;
+}
+
+.logo-text:active {
+  color: #6b6b6b;
+}
+
+.main-header__logo.logo-text:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo.logo-text:focus {
+  opacity: 0.8;
+}
+
+.main-header__logo.logo-text:active {
+  opacity: 0.6;
+}

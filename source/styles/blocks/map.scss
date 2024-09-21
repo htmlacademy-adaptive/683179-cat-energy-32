@@ -1,0 +1,51 @@
+.map {
+  display: flex;
+  flex-direction: column;
+}
+
+.map--catalog {
+  background-color: $contrast-brand-hue;
+}
+
+.map__container {
+  position: relative;
+}
+
+.map__container--img {
+  width: 100%;
+  height: 362px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.map__container--txt {
+  order: -1;
+}
+
+.map__img {
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.map__iframe {
+  border: none;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.map__container:hover .map__iframe {
+  pointer-events: all;
+}
